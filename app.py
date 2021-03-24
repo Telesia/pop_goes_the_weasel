@@ -47,7 +47,7 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Thank you for registering to Pop Goes The Weasel")
-        return redirect(url_for("profile", username=session["user"]))
+        return redirect(url_for("register", username=session["user"]))
 
     return render_template("register.html")
 
