@@ -16,9 +16,9 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo">Pop Goes The Weasel</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-ellipsis-h"></i></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for(get_dictionary) }}">Home</a></li>
+                    <li><a href="{{ url_for( 'get_dictionary' ) }}">Home</a></li>
                     <li><a href="badges.html">Cockney Phrases</a></li>
                     <li><a href="collapsible.html">Register</a></li>
                     <li><a href="mobile.html">?</a></li>
@@ -27,7 +27,7 @@
         </nav>
         <!-- mobile navbar -->
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="{{ url_for(get_dictionary) }}">Home</a></li>
+            <li><a href="{{ url_for( 'get_dictionary' ) }}">Home</a></li>
             <li><a href="badges.html">Cockney Phrases</a></li>
             <li><a href="collapsible.html">Register</a></li>
             <li><a href="mobile.html">?</a></li>
@@ -39,8 +39,9 @@
         {% block content %}
         {% endblock %}
         
-
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js')}}"></script>
     {% block scripts %}
     {% endblock %}
