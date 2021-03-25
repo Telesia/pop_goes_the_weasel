@@ -22,7 +22,7 @@ mongo = PyMongo(app)
 @app.route("/get_dictionary")
 def get_dictionary():
     dictionary = mongo.db.cockney_dictionary.find()
-    return render_template("dictionary.html", dictionary=dictionary)
+    return render_template("home.html", dictionary=dictionary)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -90,6 +90,13 @@ def user_profile(username):
     if session["user"]:
         return render_template("user_profile.html", username=username)
 
+    return redirect(url_for("sign_in"))
+
+
+@app.route("/sign_out")
+def sign_out():
+    flash("You are now signed out!")
+    session.pop("user")
     return redirect(url_for("sign_in"))
 
 
