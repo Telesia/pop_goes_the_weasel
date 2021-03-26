@@ -100,7 +100,17 @@ def sign_out():
     return redirect(url_for("sign_in"))
 
 
-@app.route("/add_cockney")
+@app.route("/add_cockney", methods=["GET", "POST"])
+def add_cockney():
+    if request.method == "POST":
+        word = {
+            "word": request.form.get("word"),
+            "meaning": request.form.get("meaning"),
+            "added_by": session["user"]
+        }
+        mongo.db.cockney_dictionary.insert_one(word)
+    return render_template("add_cockney.html")
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

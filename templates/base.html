@@ -19,10 +19,11 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-ellipsis-h"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for( 'get_dictionary' ) }}">Home</a></li>
-                    <li><a href="badges.html">Cockney Phrases</a></li>
+                    <li><a href="">Cockney Phrases</a></li>
                     {% if session.user %}
                     <li><a href="{{ url_for('sign_out') }}">Sign Out</a></li>
                     <li><a href="{{ url_for( 'user_profile', username=session['user'] )}}">Profile</a></li>
+                    <li><a href="{{ url_for('add_cockney') }}">Add Cockney Phrases</a></li>
                     {% else %}
                     <li><a href="{{ url_for('sign_in') }}">Sign In</a></li>
                     <li><a href="{{ url_for( 'register' ) }}">Register</a></li>
@@ -31,12 +32,13 @@
             </div>
         </nav>
         <!-- mobile navbar -->
-         <ul class="right hide-on-med-and-down">
+         <ul class="sidenav" id="mobile-demo">
                     <li><a href="{{ url_for( 'get_dictionary' ) }}">Home</a></li>
-                    <li><a href="badges.html">Cockney Phrases</a></li>
+                    <li><a href="">Cockney Phrases</a></li>
                     {% if session.user %}
                     <li><a href="{{ url_for('sign_out') }}">Sign Out</a></li>
                     <li><a href="{{ url_for( 'user_profile', username=session['user'] )}}">Profile</a></li>
+                    <li><a href="{{ url_for('add_cockney') }}">Add Cockney Phrases</a></li>
                     {% else %}
                     <li><a href="{{ url_for('sign_in') }}">Sign In</a></li>
                     <li><a href="{{ url_for( 'register' ) }}">Register</a></li>
