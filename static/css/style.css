@@ -2,11 +2,11 @@
 
 /* ---------- Fonts ----------*/
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: "Roboto Slab", sans-serif;
 }
 
-h3, h4 {
+p {
     font-family: "Roboto", sans-serif;
 }
 
@@ -16,10 +16,27 @@ h3, h4 {
 
 /* ---------- Home ----------*/ 
 
-.title,
-.subtitle {
-    padding: 20px;
+.title {
+    margin: 20px;
 }
+
+.subtitle {
+    margin-bottom: 60px;
+}
+
+.instruction-title {
+    margin: 60px;
+}
+
+.instruction-heading {
+    margin: 50px;
+}
+
+.dictionary-container {
+    background-color: antiquewhite;
+}
+
+
 
 /* ---------- Images ----------*/ 
 
