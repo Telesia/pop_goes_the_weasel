@@ -37,13 +37,21 @@
 
     <!-- View Cockney Dictionary -->
     <section class="center-align">
+        <!-- Circle-img -->
+        <div class="row">
+            <div class="center-align">
+                <img src="../static/images/london_piccadilly_circus.jpg" class="responsive-img circle" alt="Image Circle"> 
+            </div>
+        </div>
+
+        <!-- Cockney Dictionary -->
         <div class="dictionary-container">
             <h3 class="dictionary-title">Cockney Dictionary</h3>
         </div>
         <div class="dictionary-python">
         {% for word in dictionary %}
-            <h1>{{ word.word }}</h1><br>
-            {{ word.meaning }}
+            <h3>{{ word.word }}</h3><br>
+            <h5>{{ word.meaning }}</h5>
         {% endfor %}
         </div>
     </section>
