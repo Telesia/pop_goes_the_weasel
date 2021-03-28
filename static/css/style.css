@@ -1,3 +1,16 @@
 .flashes h4 {
     line-height: 2;
 }
+
+/* ---------- Images ----------*/ 
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.hero-img {
+    background-image: url('../images/london_red_phonebox.jpg');
+    background-size: cover;
+}
