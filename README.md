@@ -10,3 +10,6 @@ for responsiveness.
             "added_by": session["user"]
             }
         mongo.db.cockney_dictionary.insert_one(word)
+
+
+* bug in display of dictionary showing first line the wrong way round for word and meaning. The html h5 tag I had added had made it display incorrectly.

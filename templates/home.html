@@ -47,19 +47,19 @@
         </div> 
 
         <!-- Cockney Dictionary -->
-        <div class="dictionary-container">
+        <div class="dictionary-container white">
             <h3 class="dictionary-title">Cockney Dictionary</h3>
+                <div class="dictionary-python">
+                {% for word in dictionary %}
+                    <div class="row">
+                        <div class="col s6">
+                            {{ word.word }}
+                        </div>
+                        <div class="col s6">
+                            {{ word.meaning }}
+                        </div>
+                {% endfor %}
         </div>
-        <div class="dictionary-python">
-        {% for word in dictionary %}
-            <div class="row">
-                <div class="col s6">
-                    <h5> {{ word.word }}</h5>
-                </div>
-                <div class="col s6">
-                    {{ word.meaning }}
-                </div>
-        {% endfor %}
         </div>
         </div>
     </section>
