@@ -87,8 +87,13 @@ def user_profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
+    dictionary = mongo.db.cockney_dictionary.find(
+        {"added_by": session["user"]}
+    )
+
     if session["user"]:
-        return render_template("user_profile.html", username=username)
+        return render_template(
+            "user_profile.html", dictionary=dictionary, username=username)
 
     return redirect(url_for("sign_in"))
 

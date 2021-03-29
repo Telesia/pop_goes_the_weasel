@@ -3,4 +3,10 @@
 
     <h3 class="center-align">{{ username }}'s Profile</h3>
 
+    <h5 class="center-align">Your Contribution to the Dictionary</h5>
+        {% for word in dictionary %}
+            <h3>{{ word.word }}</h3><br>
+            <h5>{{ word.meaning }}</h5>
+        {% endfor %}
+
 {% endblock %}

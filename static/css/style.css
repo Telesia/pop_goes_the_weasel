@@ -9,7 +9,6 @@
 html, body {
     height: 100%;
     font-family: "Roboto", sans-serif;
-    color: var(--blue);
     background-color: var(--oatmeal);
 }
 
@@ -55,6 +54,11 @@ nav {
     background-color: var(--blue);
 }
 
+/* ---------- Base Template - Footer ----------*/ 
+
+.page-footer {
+    background-color: var(--blue);
+}
 /* ---------- Home ----------*/ 
 
 .title {
@@ -73,9 +77,10 @@ nav {
     margin: 50px;
 }
 
+/*
 .dictionary-container {
-    background-color: antiquewhite;
-}
+    background-color: ;
+}*/
 
 
 
