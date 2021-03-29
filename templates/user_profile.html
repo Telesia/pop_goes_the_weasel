@@ -3,10 +3,16 @@
 
     <h3 class="center-align">{{ username }}'s Profile</h3>
 
-    <h5 class="center-align">Your Contribution to the Dictionary</h5>
-        {% for word in dictionary %}
-            <h3>{{ word.word }}</h3><br>
-            <h5>{{ word.meaning }}</h5>
-        {% endfor %}
+    <h5 class="center-align">Your Contribution to the Dictionary<i class="fas fa-book-open"></i></h5>
+    {% for word in dictionary %}
+    <div class="container">
+        <ul class="collapsible">
+                <li>
+                <div class="collapsible-header"><i class="material-icons"></i>{{ word.word }}</div>
+                <div class="collapsible-body"><span>{{ word.meaning }}</span></div>
+                </li>
+        </ul>
+    </div>
+    {% endfor %}
 
 {% endblock %}

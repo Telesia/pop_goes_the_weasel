@@ -114,6 +114,7 @@ def add_cockney():
             "added_by": session["user"]
         }
         mongo.db.cockney_dictionary.insert_one(word)
+    flash("Thank you for contributing to Pop Goes The Weasel!")
     return render_template("add_cockney.html")
 
 
