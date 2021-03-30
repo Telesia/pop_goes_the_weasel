@@ -5,18 +5,18 @@
 
     <h5 class="center-align">Your Contribution to the Dictionary<i class="fas fa-book-open"></i></h5>
     
-    {% for word in dictionary %}
+    {% for cockney in dictionary %}
     <div class="container">
         <ul class="collapsible">
                 <li>
                     <div class="collapsible-header">
                         <div class="s3"><i class="fas fa-caret-down"></i></div>
-                        <a href="" class="btn-small btn-edit">Edit</a>
+                        <a href="{{ url_for('edit_cockney', cockney_id=cockney._id) }}" class="btn-small btn-edit">Edit</a>
                         <a href="" class="btn-small btn-delete">Delete</a>
                     </div>
                     <div class="collapsible-body">
-                        <span>Word: {{ word.word }}</span><br>
-                        <span>Meaning: {{ word.meaning }}</span>
+                        <span><strong>Word: </strong>{{ cockney.word }}</span><br>
+                        <span><strong>Meaning: </strong>{{ cockney.meaning }}</span>
                     </div>
                 </li>
         </ul>
