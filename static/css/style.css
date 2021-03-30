@@ -10,6 +10,7 @@ html, body {
     height: 100%;
     font-family: "Roboto", sans-serif;
     background-color: var(--oatmeal);
+    color: var(--blue);
 }
 
 
@@ -54,6 +55,12 @@ nav {
     background-color: var(--blue);
 }
 
+/* NOT WORKED THE TEXT COLOUR*/
+.sidenav {
+    background-color: var(--oatmeal);
+    color: var(--red);
+}
+
 /* ---------- Base Template - Footer ----------*/ 
 
 .page-footer {
@@ -77,12 +84,11 @@ nav {
     margin: 50px;
 }
 
-/*
-.dictionary-container {
-    background-color: ;
-}*/
+.dictionary-title {
+    margin: 0px;
+    padding: 100px 0px;
 
-
+}
 
 /* ---------- Images ----------*/ 
 
@@ -138,4 +144,8 @@ nav {
     background-color: var(--red);
     color: var(--white);
 
+}
+
+.btn-add-cockney {
+    background-color: var(--red);
 }
