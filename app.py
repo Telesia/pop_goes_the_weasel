@@ -133,6 +133,7 @@ def edit_cockney(cockney_id):
         mongo.db.cockney_dictionary.update
         ({"_id": ObjectId(cockney_id)}, submit)
         flash("Task Successfully Updated")
+        return redirect(url_for("get_dictionary"))
 
     cockney = mongo.db.cockney_dictionary.find_one
     ({"_id": ObjectId(cockney_id)})
