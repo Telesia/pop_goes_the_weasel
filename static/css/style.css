@@ -123,3 +123,19 @@ nav {
   }
 }
 
+/* ---------- Buttons ----------*/ 
+
+.btn-small {
+    margin: 5px;
+}
+
+.btn-edit {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.btn-delete {
+    background-color: var(--red);
+    color: var(--white);
+
+}

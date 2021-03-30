@@ -113,11 +113,30 @@ def add_cockney():
             "meaning": request.form.get("meaning"),
             "added_by": session["user"]
         }
+
         mongo.db.cockney_dictionary.insert_one(word)
+
         flash("Thank you for contributing to Pop Goes The Weasel!")
         return redirect(url_for("add_cockney"))
 
     return render_template("add_cockney.html")
+
+
+@app.route("/edit_cockney/<cockney_id>", methods=["GET", "POST"])
+def edit_cockney(cockney_id):
+    if request.method == "POST":
+        submit = {
+            "word": request.form.get("word"),
+            "meaning": request.form.get("meaning")
+        }
+        mongo.db.cockney_dictionary.update
+        ({"_id": ObjectId(cockney_id)}, submit)
+        flash("You Updated the Your Cockney Slang - You Go Geezer!")
+        return redirect(url_for("user_profile"))
+
+    cockney = mongo.db.cockney_dictionary.find_one
+    ({"_id": ObjectId(cockney_id)})
+    return render_template("edit_category.html", cockney=cockney)
 
 
 if __name__ == "__main__":

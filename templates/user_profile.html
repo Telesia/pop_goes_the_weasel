@@ -4,12 +4,20 @@
     <h3 class="center-align">{{ username }}'s Profile</h3>
 
     <h5 class="center-align">Your Contribution to the Dictionary<i class="fas fa-book-open"></i></h5>
+    
     {% for word in dictionary %}
     <div class="container">
         <ul class="collapsible">
                 <li>
-                <div class="collapsible-header"><i class="material-icons"></i>{{ word.word }}</div>
-                <div class="collapsible-body"><span>{{ word.meaning }}</span></div>
+                    <div class="collapsible-header">
+                        <div class="s3"><i class="fas fa-caret-down"></i></div>
+                        <a href="" class="btn-small btn-edit">Edit</a>
+                        <a href="" class="btn-small btn-delete">Delete</a>
+                    </div>
+                    <div class="collapsible-body">
+                        <span>Word: {{ word.word }}</span><br>
+                        <span>Meaning: {{ word.meaning }}</span>
+                    </div>
                 </li>
         </ul>
     </div>
