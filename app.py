@@ -124,10 +124,27 @@ def add_cockney():
 
 @app.route("/edit_cockney/<cockney_id>", methods=["GET", "POST"])
 def edit_cockney(cockney_id):
+    if request.method == "POST":
+        submit = {
+            "word": request.form.get("word"),
+            "meaning": request.form.get("meaning")
+        }
+
+        mongo.db.cockney_dictionary.update
+        ({"_id": ObjectId(cockney_id)}, submit)
+        flash("Task Successfully Updated")
+
     cockney = mongo.db.cockney_dictionary.find_one
     ({"_id": ObjectId(cockney_id)})
 
     return render_template("edit_cockney.html", cockney=cockney)
+
+
+@app.route("/delete_cockney/<cockney_id>")
+def delete_cockney(cockney_id):
+    mongo.db.cockney_dictionary.remove({"_id": ObjectId(cockney_id)})
+    flash("Task Deleted")
+    return redirect(url_for("add_cockney"))
 
 
 if __name__ == "__main__":
