@@ -129,8 +129,7 @@ def edit_cockney(cockney_id):
             "word": request.form.get("word"),
             "meaning": request.form.get("meaning")
         }
-        mongo.db.cockney_dictionary.update
-              ({"_id": ObjectId(cockney_id)}, submit)
+        mongo.db.cockney_dictionary.update({"_id": ObjectId(cockney_id)}, submit)
         flash("Task Successfully Updated")
 
     cockney = mongo.db.cockney_dictionary.find_one(

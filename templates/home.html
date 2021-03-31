@@ -49,18 +49,38 @@
         <!-- Cockney Dictionary -->
         <div class="dictionary-container white">
             <h3 class="dictionary-title">Cockney Dictionary</h3>
-                <div class="dictionary-python">
+                <div class="row dictionary-python">
                 {% for word in dictionary %}
-                    <div class="row">
+                    
                         <div class="col s6">
                             {{ word.word }}
                         </div>
                         <div class="col s6">
-                            {{ word.meaning }} {{word._id}}
+                            {{ word.meaning }}
                         </div>
                 {% endfor %}
+                </div>
         </div>
-        </div>
+        
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h5>A History of Cockney Folk and their Rhyming Slang</h5>
+                    <!-- Text credit: http://projectbritain.com/cockney -->
+                        <p>The cockney language can be traced back to the early part of the 19th Century, when Sir Robert Peel formed the first Police force stationed at Bow Street, London. They were known as the Bow Street Runners, Peelers and even Bobbies (Robert - Bob). This was in 1824, and the slang, as mentioned above, was to hide the true meaning of discussions from both the Police and the nonces (informers for the Police).
+                    </p>
+                    <br>
+                    <h5>What or who is a Cockney?</h5>
+                        <p>A cockney traditionally is a person born within hearing distance of the sound of Bow bells, meaning within the sound of the bells of the Church of St Mary Le Bow in Cheapside, London, EC2 and refers to an East London accent, however to most people living outside London the term Cockney means a Londoner.
+                    </p>
+                    <br>
+                    <h5>What is Cockney Rhyming Slang?</h5>
+                        <p>Cockney Rhyming slang is a coded language invented in the nineteenth century by Cockneys so they could speak in front of the police without being understood. It uses a phrase that rhymes with a word, instead of the word itself – thus ‘stairs’ becomes ‘apples and pears’, ‘phone’ becomes ‘dog and bone' and ‘word’ becomes ‘dicky bird’. It can become confusing when sometimes the rhyming part of the word is dropped: thus ‘daisies’ are ‘boots’ (from ‘daisy roots’).
+                        </p>
+                </div>
+            </div>
         </div>
     </section>
 
