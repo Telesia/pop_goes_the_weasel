@@ -1,17 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 
-<p>Have you got something cockney to shout about? Get in touch today!</p>
+    <!-- Contact Heading -->
+    <div class="container center-align">
+        <h2>Contact</h2>
+        <div>
+            <p>Have you got something cockney to shout about? Get in touch today!</p>
+        </div>
+    </div>
+
 
 <!--Contact Form-->
         <!--Code for contact form starts. Credit to: https://codepen.io/SeanWhelan/pen/avMWqQ I have added modifications and custom css-->
-        <div>
+        <div class="container center-align">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text-center contact-form">
                             <div class="contact-us text-center">
-                                <h3>Contact us</h3>
+                                <h5>Fill out the form below</h5>
                             </div>
                             <form onsubmit="return sendMail(this);" class="form-style form-content-center" method="post" data-form-title="CONTACT US">
                             <div class="form-group">
@@ -21,10 +28,10 @@
                                 <input type="email" class="form-control" id="emailaddress" name="emailaddress" required="" placeholder="Email*" data-form-field="Email">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id="message" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Message" rows="20" data-form-field="Message"></textarea>
                             </div>
                             <div>
-                                <button type="submit" class="btn btn-lg btn-danger text-uppercase contact-button">Send Message</button>
+                                <button type="submit" class="btn-edit btn-large">Send Message</button>
                             </div>
                             </form>
                         </div>
@@ -33,5 +40,24 @@
             </div>
         </div>
     <!--Code for contact form finishes. Credit to: https://codepen.io/SeanWhelan/pen/avMWqQ I have added modifications and custom css-->
+
+
+{% block scripts %}
+
+<!-- EmailJS -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_8VtcJ1eliozhELeZSRtax");
+   })();
+</script>
+
+<!-- Static JS File-->
+
+<script src="{{ url_for('static', filename='js/contact.js')}}"></script>
+
+{% endblock %}
 
 {% endblock %}

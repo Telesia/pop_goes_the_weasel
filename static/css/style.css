@@ -156,3 +156,11 @@ nav {
 .btn-add-cockney {
     background-color: var(--red);
 }
+
+
+/* ---------- Contact Form ----------*/ 
+
+.contact-form {
+    margin: 0 auto;
+    padding: 60px;
+}
