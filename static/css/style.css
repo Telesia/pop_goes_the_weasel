@@ -13,6 +13,16 @@ html, body {
     color: var(--blue);
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
+      
 
 
 /* ---------- Colours ----------*/
@@ -97,6 +107,21 @@ nav {
     text-underline-position: under;
 }
 
+.container-history {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* ---------- Profile Page ----------*/ 
+
+.profile-title {
+    padding: 30px;
+}
+
+.profile-subtitle {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
 /* ---------- Images ----------*/ 
 
 .img-container {
@@ -110,6 +135,11 @@ nav {
     background-size: cover;
 }
 
+.card-image {
+    height: 4vh;
+    
+
+}
 .hero-img {
     background-image: url('../images/london_red_phonebox.jpg');
     animation-name: hero-zoom;

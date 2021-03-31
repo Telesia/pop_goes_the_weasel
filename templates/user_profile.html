@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="center-align">{{ username }}'s Profile</h3>
-
-    <h5 class="center-align">Your Contribution to the Dictionary<i class="fas fa-book-open"></i></h5>
+    <!-- Profile Heading -->
+    <div class="div container center-align">
+        <h3 class="profile-title ">{{ username }}'s Profile</h3>
+        <h5 class="profile-subtitle">Your Contribution to the Dictionary</h5>
+    </div>
     
+    <!-- Profile User Display Dictionary Contribution -->
     {% for cockney in dictionary %}
     <div class="container">
         <ul class="collapsible">
