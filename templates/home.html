@@ -15,27 +15,29 @@
     </section>
 
     <!-- Hero Image -->
+
     <div class="hero-img img-container img"></div>
 
     <!-- How It Works -->
 
     <section class="instruction center-align">
-        <h3 class="instruction-title">How it works?</h3>
+        <h4 class="instruction-title">How it works?</h4>
             <div class="instruction-heading">
-                <h4>Register your account</h4>
+                <h5>Register your account</h5>
                 <p>Sign up today to make a contribution to the Pop Goes The Weasel community</p>
             </div>
             <div class="instruction-heading">
-                <h4 class="center-align">Sign in</h4>
+                <h5 class="center-align">Sign in</h5>
                 <p>Once you are signed in head to Add Cockney Phrases</p>
             </div>
             <div class="instruction-heading">
-                <h4>Add your own Cockney phrase</h4>
+                <h5>Add your own Cockney phrase</h5>
                 <p>Type in your word and meaning and let us all in on the secret world of cockney slang!</p>
             </div>
     </section>
 
-    <!-- View Cockney Dictionary -->
+    <!-- Dictionary Circle Image -->
+
     <section class="center-align">
         <!-- Circle-img -->
         <div class="container"> 
@@ -48,7 +50,16 @@
 
         <!-- Cockney Dictionary -->
         <div class="dictionary-container white">
-            <h3 class="dictionary-title">Cockney Dictionary</h3>
+            <h4 class="dictionary-title">Cockney Dictionary</h4>
+                <div class="row ">
+                    <div class="col s6">
+                        <h5 class="heading-underline">Words</h5>
+                    </div>
+                    <div class="col s6">
+                        <h5 class="heading-underline">Meaning</h5>
+                    </div>
+                </div>
+
                 <div class="row dictionary-python">
                 {% for word in dictionary %}
                     
@@ -60,13 +71,17 @@
                         </div>
                 {% endfor %}
                 </div>
+                <br>
         </div>
-        
     </section>
+
+    <!-- Cockney History -->
+
     <section>
         <div class="container">
             <div class="row">
                 <div class="col s12">
+                    <br>
                     <h5>A History of Cockney Folk and their Rhyming Slang</h5>
                     <!-- Text credit: http://projectbritain.com/cockney -->
                         <p>The cockney language can be traced back to the early part of the 19th Century, when Sir Robert Peel formed the first Police force stationed at Bow Street, London. They were known as the Bow Street Runners, Peelers and even Bobbies (Robert - Bob). This was in 1824, and the slang, as mentioned above, was to hide the true meaning of discussions from both the Police and the nonces (informers for the Police).
@@ -79,16 +94,11 @@
                     <h5>What is Cockney Rhyming Slang?</h5>
                         <p>Cockney Rhyming slang is a coded language invented in the nineteenth century by Cockneys so they could speak in front of the police without being understood. It uses a phrase that rhymes with a word, instead of the word itself – thus ‘stairs’ becomes ‘apples and pears’, ‘phone’ becomes ‘dog and bone' and ‘word’ becomes ‘dicky bird’. It can become confusing when sometimes the rhyming part of the word is dropped: thus ‘daisies’ are ‘boots’ (from ‘daisy roots’).
                         </p>
+                    <br>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
     
 {% endblock %}
 
