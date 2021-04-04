@@ -71,6 +71,51 @@ For a registered user:
 * Add To dictionary
 * Sign Out
 
+The project will also use a database served by the cloud platform MongoDB.
+
+I set up the database using the following steps from CI tutorials:
+
+* Created an account with MongoDB and selected the create a shared cluster option.
+* Selected AWS as my cloud provider and my closest region.
+* Then I selected The M0 cluster tier, named the cluster and created.
+* Once the cluster was created I clicked on database access and added in the database user details.
+* Then I set the database user privileges to read and write to the database.
+* In security menu, network access, add IP address and access from anywhere.
+* Clicked on the connect button then the connect your application button.
+* Added the details into my environmental variable within env.py file to connect.
+* Then within my cluster, I clicked collections, create database and named it 'Pop Goes The Weasel'.
+* Within the database I created my 2 collections for the project - users and cockney_dictionary
+
+##### Database schema 
+
+My db consists of two collections: 
+
+1. cockney_dictionary
+
+    * Here is an example of a record from the collection:
+
+            _id:6061e9439c533093c991e8ae
+
+            word:"barnet"
+
+            meaning:"hair"
+
+            added_by:"ricky"
+
+2. users 
+
+    * Here is an example of a record from the collection:
+
+            _id: 605c9a6865d28b2c50090bc2
+
+            username: "andrew"
+            
+            password: "pbkdf2:sha256:150000$MaQNn5Lf$6bba13503c555e28773bcf1f25ac5d568c5080d3..."
+
+
+
+
+
 #### Skeleton
 I designed wireframes for mobile, tablet and desktop using Balsamiq.
 They are viewable in PDF using the following link:
@@ -83,8 +128,11 @@ They are viewable in PDF using the following link:
 I wanted the colours to reflect the UK flag, but in a more subtle and modern palette. This choice is to represent the cockneys of London, UK and their dialect.
 
 0E3746 - Navy Blue
+
 EAE8DC - Oatmeal
+
 F4F2EC - Off White
+
 BE2623 - Warm Red
 
 ![colour palette](static/images/colour_palette_PGTW.jpeg "Colour Palette")
@@ -103,18 +151,18 @@ I have used two Google Fonts: Roboto, Roboto Slab for headings and sans-serif as
 
 * A dictionary page with a materialize collapsible component, search functionality and a sort button
 
-* Add, Edit and Delete word functionality
+* Add, Edit and Delete functionality
 
-* Login, Log Out and Sign Up functionality
+* Register, Sign In and Sign Out functionality
 
 * A profile page that displays words the user has added to the dictionary
 
 * A contact page with an easy to use form connected to EmailJS to allow anyone to contact the site owner
 
-* A footer located on every page with links to social media accounts, an email link and various different Northern Ireland tourism websites
+* A footer located on every page 
 
 #### Features Left to Implement:
-* 
+* A search bar feature to look up words in the dictionary
 
 ### Technologies Used
 
@@ -192,15 +240,14 @@ for responsiveness.
 
 The repository for the project is held on GitHub and was created by Sarah Telesia. 
 
-Steps to create project using Gitpod and GitHub:
+#### Steps to create project using Gitpod and GitHub:
 
 * Navigate to Code Institute main template on github (https://github.com/Code-Institute-Org/gitpod-full-template)
 * Click on 'Use this template' and create personalised Repository Name
 * Click 'Create repository from template'
 * Click on 'Gitpod' button in new respository, to open in IDE
 
-
-Steps on how to clone the Lockdown-Cocktail-V2 repository from GitHub
+#### Steps on how to clone the repository from GitHub
 
 I have learned and taken the information for the below clone steps from https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 
@@ -214,6 +261,7 @@ Scroll down to read 'Open with GitHub Desktop' and then click
 This will open GitHub Desktop (If this is your first time using GitHub Desktop follow the software download procedure)
 A pop up will ask you where you wish to clone the repository to on your local computer and then press clone
 You can now access the repository files in your chosen IDE
+
 Clone using Git
 
 Open GitHub website and navigate to Quartet-Militaire repository on Sarah Telesia's GitHub at https://github.com/Telesia/Lockdown-Cocktail-V2
@@ -224,6 +272,13 @@ Change the current working directory to the location where you want the cloned d
 Type git clone, and then paste the URL you copied earlier
 Press Enter to create your local clone.6.
 You can now access the repository files in your chosen IDE
+
+#### Deploy the Project to Heroku
+
+The steps are show in the CI tutorial 'Putting the Basics In Place' which I followed.
+Here is a summary of steps:
+
+
 
 ### Credits
 
