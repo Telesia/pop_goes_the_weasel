@@ -15,8 +15,42 @@
                     <div class="collapsible-header">
                         <div class="s3"><i class="fas fa-caret-down"></i></div>
                         <a href="{{ url_for('edit_cockney', cockney_id=cockney._id) }}" class="btn-small btn-edit">Edit</a>
-                        <a href="{{ url_for('delete_cockney', cockney_id=cockney._id) }}" class="btn-small btn-delete">Delete</a>
+
+                        <!-- Delete Confirm Modal -->
+                            <!-- Modal Trigger -->
+                             <!-- Modal Trigger -->
+                            <button data-target="{{ cockney._id }}" class="btn btn-small modal-trigger">Delete</button>
+
+                            <!-- Modal Structure -->
+                            <div id="{{ cockney._id }}" class="modal">
+                                <div class="modal-content">
+                                <h4>Modal Header</h4>
+                                <p>A bunch of text</p>
+                                </div>
+
+                                <!-- Modal Footer Buttons -->
+                                <div class="modal-footer">
+                                    <!-- Cancel Button in Modal -->
+                                        <div class="col s12 m6">
+                                            <a href="#!" class="btn delete modal-close waves-effect waves-light z-depth-0">
+                                                <i class="fas fa-times"></i>
+                                                Back
+                                            </a>
+                                        </div>
+                                    <!-- Delete Button in Modal-->
+                                        <div class="col s12">
+                                             <a href="{{ url_for('delete_cockney', cockney_id=cockney._id) }}" class="modal-close waves-effect waves-green btn-flat">
+                                                <i class="fas fa-trash-alt"></i>
+                                                Delete
+                                             </a>
+                                        </div>
+                                         
+                                </div>
+                            </div>
                     </div>
+
+
+
                     <div class="collapsible-body">
                         <span><strong>Word: </strong>{{ cockney.word }}</span><br>
                         <span><strong>Meaning: </strong>{{ cockney.meaning }}</span>
