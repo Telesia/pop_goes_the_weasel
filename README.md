@@ -13,12 +13,6 @@ A link to the website can be found [here]()
 Pop Goes The Weasel is a fun and informative online dictionary. It is for users who may want to understand more about the language of cockney rhyming slang and/or
 contribute to the vernacular of terms. It is an interactive application where users can register then subsequently login to their account in order to add any further cockney words and phrases. The application is aimed at a wide range of users (10 - 100!) and because of that I am keeping the overall look contempory yet professional. The users will want to access information regarding cockney words and phrases as well as contribute to the dictionary easily. 
 
-These users will want clear 
-information on how to whip up a cocktail but it is important that the site encapsulates the feminine fun 
-of heading out for cocktails and interacting with a mixologist at the bar. This feel will be created by the 
-projects choice of colour, copy, functionality and typography. These users will have a choice to search for 
-their favourite cocktail receipe or generate a random cocktail to view at the click of a button. 
-
 As a first time user I want to:
 
 * be able to read cockney words and rhyming slang phrases 
@@ -77,25 +71,27 @@ For a registered user:
 * Add To dictionary
 * Sign Out
 
-
-
 #### Skeleton
 I designed wireframes for mobile, tablet and desktop using Balsamiq.
 They are viewable in PDF using the following link:
 
-[Wireframes for home page and contact page]() 
+[Wireframes](static/wireframes) 
 
 #### Surface
 ##### Colours
+
+I wanted the colours to reflect the UK flag, but in a more subtle and modern palette. This choice is to represent the cockneys of London, UK and their dialect.
 
 0E3746 - Navy Blue
 EAE8DC - Oatmeal
 F4F2EC - Off White
 BE2623 - Warm Red
 
+![colour palette](colour_palette_PGTW.jpeg "Colour Palette")
+ß
 ##### Typography
 
-I have used two Google Fonts: EB Garamond, cabin
+I have used two Google Fonts: Roboto, Roboto Slab for headings and sans-serif as a back up font.
 
 ### Features
 
@@ -232,6 +228,14 @@ You can now access the repository files in your chosen IDE
 ### Credits
 
 Colour palette from www.digitalsynopsis.com 
+
+Credit to CI (Code Institute) lessons on EmailJS integration for the contact.js function.
+
+Credit to CI (Code Institute) lessons on the Task Manager Application, which I have based my project around.
+
+Credit to: Ed B_lead for code logic and how to wire up data-targets/Ids taken from Code Institute Slack channel.
+
+Thank to my mentor Spencer Barriball
 
 
 
