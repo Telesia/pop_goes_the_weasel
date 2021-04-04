@@ -87,8 +87,8 @@ EAE8DC - Oatmeal
 F4F2EC - Off White
 BE2623 - Warm Red
 
-![colour palette](colour_palette_PGTW.jpeg "Colour Palette")
-ß
+![colour palette](static/images/colour_palette_PGTW.jpeg "Colour Palette")
+
 ##### Typography
 
 I have used two Google Fonts: Roboto, Roboto Slab for headings and sans-serif as a back up font.
