@@ -1,7 +1,7 @@
 # Pop Goes The Weasel
 ## Code Institute Milestone Project 3: Python and Data Centric Development
 
-Welcome Telesia,
+Welcome
 =======
 Pop Goes The Weasel is a dictionary style website for users who want to learn more about cockney words, phrases and the art of rhyming slang.
 
@@ -127,15 +127,17 @@ They are viewable in PDF using the following link:
 
 I wanted the colours to reflect the UK flag, but in a more subtle and modern palette. This choice is to represent the cockneys of London, UK and their dialect.
 
-0E3746 - Navy Blue
+#0E3746 - Navy Blue
 
-EAE8DC - Oatmeal
+#EAE8DC - Oatmeal
 
-F4F2EC - Off White
+#F4F2EC - Off White
 
-BE2623 - Warm Red
+#BE2623 - Warm Red
 
 ![colour palette](static/images/colour_palette_PGTW.jpeg "Colour Palette")
+
+Colour palette taken from www.digitalsynopsis.com 
 
 ##### Typography
 
@@ -143,11 +145,46 @@ I have used two Google Fonts: Roboto, Roboto Slab for headings and sans-serif as
 
 ### Features
 
-* Responsive on all devices with a mobile-first design using the Materialize framework
+#### All Website Pages:
+* A navbar with links ordered for a new user: home, contact, sign in, register; and for a registered user: home, contact, profile, add to dictionary, sign out. The navbar collapses into a hamburger button when viewed on smaller screen devices.
+* A footer that includes links across the site, a tagline reiterating what the website is about and copyright information.
+* The site is responsive on all devices with a mobile-first design making use of the Materialize framework.
 
-* An easy to use navigation bar located at the top of every page with a collapsible side navigation menu on mobile devices
+#### Home Page:
 
-* A home page with an about section that explains the purpose of the site
+* A home page with title, subtitle, hero image
+* A 'How does it work' section to advise users how to use the site
+* A feature circle image for interest
+* The main cockney dictionary with two columns: words/phrases and corresponding meaning
+* Cockney history section
+
+#### Contact Form:
+* A contact page with an easy to use form connected to EmailJS to allow anyone to contact the site owner
+
+#### Sign In Page: 
+* Sign In form with button for registered users
+* Redirection link to register page if not registered at the bottom of the sign in form
+
+#### Register Page:
+* Register form with button for new users
+* Redirection link to Sign In page if already registered
+
+### Additional Features Once User Signed In
+
+#### Add to dictionary Page:
+* Form where user can type in word/phrase and meaning and button to submit to the dictionary
+
+#### User Profile Page:
+* User's name is displayed as the title
+* Materialize collapsible featuring the words/phrases and meanings that the user has added themselves to the cockney dictionary
+* Within collapsible feature there are two buttons: edit and delete
+* When using edit button user is redirected to edit page
+
+#### Edit Page:
+* Edit dictionary form with word user has selected from their profile contribution collapsible to edit, populated within form
+* Ability for user to delete populated form and edit/ change word and meaning as they wish
+
+
 
 * A dictionary page with a materialize collapsible component, search functionality and a sort button
 
@@ -157,7 +194,7 @@ I have used two Google Fonts: Roboto, Roboto Slab for headings and sans-serif as
 
 * A profile page that displays words the user has added to the dictionary
 
-* A contact page with an easy to use form connected to EmailJS to allow anyone to contact the site owner
+
 
 * A footer located on every page 
 

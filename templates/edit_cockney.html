@@ -10,7 +10,6 @@
             <!-- cockney word-->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
                     <input id="word" name="word" minlength="5" maxlength="50" 
                     value="{{ cockney.word }}" type="text" class="validate" required>
                     <label for="word">Cockney Word</label>
@@ -19,7 +18,6 @@
             <!-- cockney description -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix light-blue-text text-darken-4 prefix"></i>
                     <textarea id="meaning" name="meaning" minlength="5"
                     maxlength="200" class="materialize-textarea validate" required>
                   
@@ -32,11 +30,11 @@
             <div class="row">
                 <div class="col s12 center-align">
                     <!-- cancel button -->
-                    <a href="" class="btn-large red text-shadow">Cancel
+                    <a href="" class="btn-large text-shadow btn-delete">Cancel
                         <i class="fas fa-times-circle right"></i>
                     </a>
-                    <button type="submit" class="btn-large">
-                        Edit Task <i class="fas fa-edit right"></i>
+                    <button type="submit" class="btn-large btn-edit">
+                        Edit <i class="fas fa-edit right"></i>
                     </button>
                 </div>
             </div>
