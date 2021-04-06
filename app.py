@@ -22,7 +22,12 @@ mongo = PyMongo(app)
 @app.route("/get_dictionary")
 def get_dictionary():
     dictionary = mongo.db.cockney_dictionary.find()
-    return render_template("home.html", dictionary=dictionary)
+    return render_template("dictionary.html", dictionary=dictionary)
+
+
+@app.route("/home")
+def home():
+    return render_template("home.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -101,25 +106,28 @@ def user_profile(username):
 @app.route("/sign_out")
 def sign_out():
     flash("You are now signed out!")
-    session.pop("user")
+    session.clear()
     return redirect(url_for("sign_in"))
 
 
 @app.route("/add_cockney", methods=["GET", "POST"])
 def add_cockney():
-    if request.method == "POST":
-        word = {
-            "word": request.form.get("word"),
-            "meaning": request.form.get("meaning"),
-            "added_by": session["user"]
-        }
+    if session["user"]:
+        if request.method == "POST":
+            word = {
+                "word": request.form.get("word"),
+                "meaning": request.form.get("meaning"),
+                "added_by": session["user"]
+            }
 
-        mongo.db.cockney_dictionary.insert_one(word)
+            mongo.db.cockney_dictionary.insert_one(word)
 
-        flash("Thank you for contributing to Pop Goes The Weasel!")
-        return redirect(url_for("add_cockney"))
+            flash("Thank you for contributing to Pop Goes The Weasel!")
+            return redirect(url_for("add_cockney"))
 
-    return render_template("add_cockney.html")
+        return render_template("add_cockney.html")
+    else:
+        return redirect(url_for("home"))
 
 
 @app.route("/edit_cockney/<cockney_id>", methods=["GET", "POST"])
@@ -127,8 +135,10 @@ def edit_cockney(cockney_id):
     if request.method == "POST":
         submit = {
             "word": request.form.get("word"),
-            "meaning": request.form.get("meaning")
+            "meaning": request.form.get("meaning"),
+            "added_by": session["user"]
         }
+
         mongo.db.cockney_dictionary.update({"_id": ObjectId(cockney_id)}, submit)
         flash("Cockney Successfully Updated")
 

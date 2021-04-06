@@ -10,8 +10,7 @@ A link to the website can be found [here](https://pop-weasel.herokuapp.com/)
 ### UX
 
 #### Strategy
-Pop Goes The Weasel is a fun and informative online dictionary. It is for users who may want to understand more about the language of cockney rhyming slang and/or
-contribute to the vernacular of terms. It is an interactive application where users can register then subsequently login to their account in order to add any further cockney words and phrases. The application is aimed at a wide range of users (10 - 100!) and because of that I am keeping the overall look contempory yet professional. The users will want to access information regarding cockney words and phrases as well as contribute to the dictionary easily. 
+Pop Goes The Weasel is a fun and informative online dictionary for people of all ages. It is for users who may want to understand more about the language of cockney rhyming slang and/or contribute to the vernacular of terms. It is an interactive application where users can register then subsequently login to their account in order to add any further cockney words and phrases. The application is aimed at a wide range of users (10 - 100!) and because of that I am keeping the overall look contempory, yet professional. The users will want to access information regarding cockney words and phrases as well as contribute to the dictionary easily. 
 
 As a first time user I want to:
 
@@ -43,11 +42,11 @@ As a site owner I want to:
 * allow users to read the dictionary
 
 #### Scope
-After analysis of the user stories, I have decided that I cannot implement all user's needs at this time so I have decided on the below features to be my initial minimum scope:
+After analysis of the user stories, I have decided on the below features to be my initial minimum scope:
 
 * Register account form
-* Log in form
-* Log out capability
+* Sign in form
+* Sign out capability
 * Add words to dictionary
 * Edit words in dictionary 
 * Delete words from dictionary
@@ -239,9 +238,11 @@ The project uses Balsamiq to create wireframes.
 
 Used to integrate the functionality of the contact form to connect to an appropriate email address.
 
-
-
 ### Testing
+
+After a mentoring session where we tested through some of the features, I was advised to add in some defensive programming to secure my site better.
+This meant that on the Log In page I added an extra layer of code so that a user needed to be "in session" to be able to access
+the add to dictionary page. Otherwise, any user could retype the URL link themselves and access the add_cockney.html page.
 
 Please refer to seperate document found [here](TESTING.md)
 
@@ -258,8 +259,6 @@ for responsiveness.
 
 
 * bug in display of dictionary showing first line the wrong way round for word and meaning. The html h5 tag I had added had made it display incorrectly.
-
-
 
 ### Deployment
 
@@ -280,7 +279,7 @@ There are two options:
 
 Clone using GitHub Desktop
 
-Open GitHub website and navigate to Quartet-Militaire repository on Sarah Telesia's GitHub at https://github.com/Telesia/Lockdown-Cocktail-V2
+Open GitHub website and navigate to Quartet-Militaire repository on Sarah Telesia's GitHub at: https://github.com/Telesia/pop_goes_the_weasel
 Above the list of files, click on Code button
 Scroll down to read 'Open with GitHub Desktop' and then click
 This will open GitHub Desktop (If this is your first time using GitHub Desktop follow the software download procedure)
@@ -289,13 +288,13 @@ You can now access the repository files in your chosen IDE
 
 Clone using Git
 
-Open GitHub website and navigate to Quartet-Militaire repository on Sarah Telesia's GitHub at https://github.com/Telesia/Lockdown-Cocktail-V2
-Above the list of files, click on Code button
-Click on the web URL viewable and copy
+Open GitHub website and navigate to repository on Sarah Telesia's GitHub at: https://github.com/Telesia/pop_goes_the_weasel
+Above the list of files, click on Code button           
+Click on the web URL viewable and copy                        
 Open the terminal
 Change the current working directory to the location where you want the cloned directory
 Type git clone, and then paste the URL you copied earlier
-Press Enter to create your local clone.6.
+Press Enter to create your local clone.
 You can now access the repository files in your chosen IDE
 
 #### Deploy the Project to Heroku
@@ -348,21 +347,4 @@ Thanks to my mentor Spencer Barriball
 
 
 
-
-
-# Testing 
-
-* Noticed bug with mobile view that navbar <a></a> link for brand-logo didn't display fully so adjusted design to use an icon which mixed up the media and worked better visually 
-for responsiveness.
-
-  if request == "POST":
-        word = {
-            "word": request.form.get("word"),
-            "meaning": request.form.get("meaning"),
-            "added_by": session["user"]
-            }
-        mongo.db.cockney_dictionary.insert_one(word)
-
-
-* bug in display of dictionary showing first line the wrong way round for word and meaning. The html h5 tag I had added had made it display incorrectly.
 

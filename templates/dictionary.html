@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content%}
+
+    
+    <main>
+        <!-- Cockney Dictionary -->
+        <div class="dictionary-container center-align white">
+            <h4 class="dictionary-title">Cockney Dictionary</h4>
+                <div class="row ">
+                    <div class="col s6">
+                        <h5 class="heading-underline">Words</h5>
+                    </div>
+                    <div class="col s6">
+                        <h5 class="heading-underline">Meaning</h5>
+                    </div>
+                </div>
+
+                <div class="row dictionary-python">
+                {% for word in dictionary %}
+                    
+                        <div class="col s6">
+                            {{ word.word }}
+                        </div>
+                        
+                        <div class="col s6">
+                            {{ word.meaning }}
+                        </div>
+                {% endfor %}
+                </div>
+                <br>
+        </div>
+    </main>
+
+    
+{% endblock %}
+
