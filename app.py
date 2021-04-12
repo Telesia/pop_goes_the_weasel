@@ -19,15 +19,15 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
+
 @app.route("/get_dictionary")
 def get_dictionary():
     dictionary = mongo.db.cockney_dictionary.find()
     return render_template("dictionary.html", dictionary=dictionary)
-
-
-@app.route("/home")
-def home():
-    return render_template("home.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
