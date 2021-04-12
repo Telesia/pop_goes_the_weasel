@@ -119,7 +119,7 @@ My db consists of two collections:
 I designed wireframes for mobile, tablet and desktop using Balsamiq.
 They are viewable in PDF using the following link:
 
-[Wireframes](static/wireframes) 
+[Wireframes](static/images/PGTW_wireframes.pdf) 
 
 #### Surface
 ##### Colours
