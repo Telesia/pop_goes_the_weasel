@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <!-- Contact Heading -->
+    <!-- contact heading -->
     <div class="container center-align">
         <h3>Contact</h3>
         <div>
@@ -10,8 +10,9 @@
     </div>
 
 
-<!--Contact Form-->
+<!-- contact form -->
         <!--Code for contact form starts. Credit to: https://codepen.io/SeanWhelan/pen/avMWqQ I have added modifications and custom css-->
+    <main>
         <div class="container center-align">
             <div class="row">
                 <div class="col-sm-12">
@@ -39,9 +40,7 @@
                 </div>
             </div>
         </div>
-    <!--Code for contact form finishes. Credit to: https://codepen.io/SeanWhelan/pen/avMWqQ I have added modifications and custom css-->
-
-
+    </main>
 {% block scripts %}
 
 <!-- EmailJS -->
@@ -59,5 +58,4 @@
 <script src="{{ url_for('static', filename='js/contact.js')}}"></script>
 
 {% endblock %}
-
 {% endblock %}
