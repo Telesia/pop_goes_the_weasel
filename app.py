@@ -174,6 +174,12 @@ def contact():
     return render_template("contact.html")
 
 
+# Code credit for 404 to my mentor Spencer Barriball
+@app.errorhandler(404)
+def handle_404(exception):
+    return render_template('404.html', exception=exception)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
