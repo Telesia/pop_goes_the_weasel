@@ -22,7 +22,7 @@ The final report for the home page can be viewed below and [here](static/testing
 
 ### W3C Validator Testing
 I used the W3C validators for HTML and CSS to check my code. 
-All pages passed the checks after some adjustments to code and here is an example below:
+All pages passed the checks after some adjustments to code. The main issue was in my semantic mark up of the pages. I had used main more than once and some sections did not have headings. This was rectified and here is an example below:
 
 <img src="static/testing/testing_w3c_html_validator_pgtw.png" width="500"> 
 
