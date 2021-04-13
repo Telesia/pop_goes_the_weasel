@@ -66,5 +66,5 @@ the add to dictionary page. Otherwise, any user could retype the URL link themse
 
 | Bugs Found | Action to fix | Link to fix commit| 
 | -----------|:-------------:| -----------------:| 
-| contact page not working | 
+| contact page not working | Remove type attribute and check through all code for errors, add space between end blocks | https://github.com/Telesia/pop_goes_the_weasel/commit/02d01b957ee40e0f7080a2c3930c16fe7fef785d |
 

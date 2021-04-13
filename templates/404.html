@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An interactive cockney dictionary">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <title>404 Error</title>
+    </head>
+
+    <body>
+        <div class="container center-align">
+            <div class="card">
+                <h1>Cor Blimey! Something's Gone Up The Spout Here With Loading The Page</h1>
+                <div>
+                    <p>Click below to return to the home page</p>  
+                </div>
+                <a href="{{ url_for('home') }}" class="btn-large">Pop Goes The Weasel</a>
+            </div>
+        </div>
+    </body>
+
+</html>
