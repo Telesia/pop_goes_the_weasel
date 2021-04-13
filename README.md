@@ -315,7 +315,7 @@ Credit to CI (Code Institute) lessons on the Task Manager Application, which I h
 
 Credit to: Ed B_lead for code logic and how to wire up data-targets/Ids taken from Code Institute Slack channel.
 
-Thanks to my mentor Spencer Barriball. Specfically for his help with the 404 error page.
+Thanks to my mentor Spencer Barriball. Specfically for his help with the 404 error page and defensive programming.
 
 
 
