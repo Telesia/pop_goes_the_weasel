@@ -240,25 +240,7 @@ Used to integrate the functionality of the contact form to connect to an appropr
 
 ### Testing
 
-After a mentoring session where we tested through some of the features, I was advised to add in some defensive programming to secure my site better.
-This meant that on the Log In page I added an extra layer of code so that a user needed to be "in session" to be able to access
-the add to dictionary page. Otherwise, any user could retype the URL link themselves and access the add_cockney.html page.
-
 Please refer to seperate document found [here](TESTING.md)
-
-* Noticed bug with mobile view that navbar <a></a> link for brand-logo didn't display fully so adjusted design to use an icon which mixed up the media and worked better visually 
-for responsiveness.
-
-  if request == "POST":
-        word = {
-            "word": request.form.get("word"),
-            "meaning": request.form.get("meaning"),
-            "added_by": session["user"]
-            }
-        mongo.db.cockney_dictionary.insert_one(word)
-
-
-* bug in display of dictionary showing first line the wrong way round for word and meaning. The html h5 tag I had added had made it display incorrectly.
 
 ### Deployment
 
