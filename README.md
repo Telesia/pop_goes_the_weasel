@@ -146,7 +146,7 @@ I have used two Google Fonts: Roboto, Roboto Slab for headings and sans-serif as
 
 #### All Website Pages:
 * A navbar with links ordered for a new user: home, contact, sign in, register; and for a registered user: home, contact, profile, add to dictionary, sign out. The navbar collapses into a hamburger button when viewed on smaller screen devices.
-* A footer that includes links across the site, a tagline reiterating what the website is about and copyright information.
+* A footer that includes a tagline reiterating what the website is about and copyright information.
 * The site is responsive on all devices with a mobile-first design making use of the Materialize framework.
 
 #### Home Page:

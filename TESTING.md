@@ -53,3 +53,15 @@ for responsiveness.
 
 
 * bug in display of dictionary showing first line the wrong way round for word and meaning. The html h5 tag I had added had made it display incorrectly.
+
+#### Feature Testing
+
+| Page       | Action Taken  | Expected Result  | Pass/Fail | 
+| -----------|:-------------:| ----------------:| ---------:|
+| home.html | Click on all links in navbar |   Link to each page works correctly and loads   |    Passed    |
+| home.html | Click on Sign Out in navbar  |   User signed out & return Sing In page | Passed
+| home.html | Use Google Developer Tools to check different screen sizes to view hamburger icon navbar |   See the three dot navbar icon on smaller devices (under 992px) | Passed |
+| home.html (992px and under) | Click on hamburger button | Opens up the navbar list items | Passed
+| home.html (992px and under) | Click on each nav item within hamburger button | Link to each page works correctly and loads | Passed
+| home.html (992px and under) | Click on each nav item within hamburger button | Link to each page works correctly and loads | Passed
+
