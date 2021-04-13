@@ -22,8 +22,11 @@ The final report for the home page can be viewed below and [here](static/testing
 
 ### W3C Validator Testing
 I used the W3C validators for HTML and CSS to check my code. 
+All pages passed the checks after some adjustments to code and here is an example below:
 
-### BeautifyTools for JS
+<img src="static/testing/testing_w3c_html_validator_pgtw.png" width="500"> 
+
+### BeautifyTools for JS????
 http://beautifytools.com/javascript-validator.php On the final test there were no errors found. There were a few errors throughout my work on the project that I corrected as I developed.
 
 #### Defensive Programming after initial tests
