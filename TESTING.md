@@ -4,14 +4,17 @@ I used Google Chrome Developer Tools throughout the project. It was an invaluabl
 
 When I first viewed my Contact page using the Developer Tools in Chrome, I noticed that the heading and subheading for the page pushed the contact form lower down on smaller device sizes. This meant that the user experience would be hindered and visually it was not appealing. I decided to use media queries to hide the subheading for smaller devices to eliminate this visual issue.
 
-I used the Lighthouse tool to check over my website. Overall, on first test the site performed all in the greens, but there were a few adjustments to make it better. See table below:
+I used the Lighthouse tool to check over my website. I went through each page sequentially in the browser and made a note of any issues to resolve (see table below). Overall, on first tests the site performed well and most were green, but there were a few adjustments to improve the site. 
 
 | Page       | Lighthouse Improvement | Adjusted |
 | -----------|:-------------:| 
 | home.html | Add meta data in head |   Yes |
-| home.html | Make sure H1-6 aren't missing a step |  Yes |
+| home.html | Make sure H1-6 are in sequential order |  Yes |
+| contact.html | Make sure H1-6 are in sequential order | Yes |
+| profile.html | Make sure H1-6 are in sequential order | Yes |
+| add_cockney.html | Make sure H1-6 are in sequential order | Yes |
 
-The report for the home page can be viewed below and here(static/testing/testing_lighthouse_pgtw.png)
+The report for the home page can be viewed below and [here](static/testing/testing_lighthouse_pgtw.png)
 
 <img src="static/testing/testing_lighthouse_pgtw.png" width="500"> 
 
