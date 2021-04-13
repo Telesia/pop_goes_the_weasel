@@ -32,10 +32,14 @@ def get_dictionary():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    # if user tries to submit form, "POST" it, then see if username exists
+    """
+    Check if user exists in db, create new dictionary
+    if not for new user and store in db. Then make new user
+    the current session cookie.
+    """
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
-            {"username": request.form.get("username").lower()})
+                {"username": request.form.get("username").lower()})
 
         if existing_user:
             flash("Sorry, that username is already taken")
@@ -45,7 +49,7 @@ def register():
         register = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
-        }
+            }
         # insert the dictionary variable into the db
         mongo.db.users.insert_one(register)
 
@@ -60,7 +64,7 @@ def register():
 @app.route("/sign_in", methods=["GET", "POST"])
 def sign_in():
     if request.method == "POST":
-        # check if username exists in db
+        """Check if username exists in db."""
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
         if existing_user:
@@ -88,7 +92,7 @@ def sign_in():
 
 @app.route("/user_profile/<username>", methods=["GET", "POST"])
 def user_profile(username):
-    # grab the session user's username from the db
+    """Grab the session user's username from the db."""
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
@@ -105,6 +109,7 @@ def user_profile(username):
 
 @app.route("/sign_out")
 def sign_out():
+    """Clear the session cookies to sign user out fully."""
     flash("You are now signed out!")
     session.clear()
     return redirect(url_for("sign_in"))
@@ -112,6 +117,10 @@ def sign_out():
 
 @app.route("/add_cockney", methods=["GET", "POST"])
 def add_cockney():
+    """
+    Check user in session else redirect
+    to home template.
+    """
     if session["user"]:
         if request.method == "POST":
             word = {
@@ -132,6 +141,10 @@ def add_cockney():
 
 @app.route("/edit_cockney/<cockney_id>", methods=["GET", "POST"])
 def edit_cockney(cockney_id):
+    """
+    Take new information from form and post to a new dictionary
+    and add to db.
+    """
     if request.method == "POST":
         submit = {
             "word": request.form.get("word"),
@@ -150,6 +163,7 @@ def edit_cockney(cockney_id):
 
 @app.route("/delete_cockney/<cockney_id>")
 def delete_cockney(cockney_id):
+    """Remove record from database as selected by user"""
     mongo.db.cockney_dictionary.remove({"_id": ObjectId(cockney_id)})
     flash("Task Deleted")
     return redirect(url_for("add_cockney"))

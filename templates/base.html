@@ -49,6 +49,7 @@
                     {% endif %}
                 </ul>
     </header>
+
     <section> 
         <!-- python flash messages-->
         {% with messages = get_flashed_messages() %}
@@ -60,8 +61,8 @@
                 {% endfor %}
             {% endif %}
         {% endwith %}
-
     </section>
+
         <!-- main content -->
         <main>
         
@@ -92,5 +93,4 @@
         {% block scripts %}
         {% endblock %}
     </body>
-
 </html>
