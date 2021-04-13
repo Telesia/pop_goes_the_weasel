@@ -38,22 +38,6 @@ After a mentoring session where we tested through some of the features, I was ad
 This meant that on the Log In page I added an extra layer of code so that a user needed to be "in session" to be able to access
 the add to dictionary page. Otherwise, any user could retype the URL link themselves and access the add_cockney.html page.
 
-Please refer to seperate document found [here](TESTING.md)
-
-* Noticed bug with mobile view that navbar <a></a> link for brand-logo didn't display fully so adjusted design to use an icon which mixed up the media and worked better visually 
-for responsiveness.
-
-  if request == "POST":
-        word = {
-            "word": request.form.get("word"),
-            "meaning": request.form.get("meaning"),
-            "added_by": session["user"]
-            }
-        mongo.db.cockney_dictionary.insert_one(word)
-
-
-* bug in display of dictionary showing first line the wrong way round for word and meaning. The html h5 tag I had added had made it display incorrectly.
-
 #### Feature Testing
 
 | Page       | Action Taken  | Expected Result  | Pass/Fail | 
@@ -62,6 +46,25 @@ for responsiveness.
 | home.html | Click on Sign Out in navbar  |   User signed out & return Sing In page | Passed
 | home.html | Use Google Developer Tools to check different screen sizes to view hamburger icon navbar |   See the three dot navbar icon on smaller devices (under 992px) | Passed |
 | home.html (992px and under) | Click on hamburger button | Opens up the navbar list items | Passed
-| home.html (992px and under) | Click on each nav item within hamburger button | Link to each page works correctly and loads | Passed
-| home.html (992px and under) | Click on each nav item within hamburger button | Link to each page works correctly and loads | Passed
+| home.html (992px and under) | Click on each nav item within hamburger button | Link to each page works correctly and loads | Passed |
+| home.html (992px and under) | Click on each nav item within hamburger button | Link to each page works correctly and loads | Passed |
+| register.html | Add new username and password | registers user and redirects to blank register form | Passed
+| register.html | Click 'Sign in here' link below form| Opens sign in page | Passed |
+| sign_in.html | Enter username and password and click sign in | Takes user to their profile page | Passed |
+| sign_in.html | Click Register here link below form | Opens register page | Passed |
+| add_cockney.html | Form for user to enter word and meaning and click add to dictionary button | Passed |
+| user_profile.html | Word added previously, click edit button on accordian | Open edit_cockney.html | Passed |
+| edit_cockney.html | Word and meaning preloaded to Edit form | | Passed |
+| edit_cockney.html | Edit word and meaning and click edit button | Changes dictionary entry and reloads edit cockney form and can see adjustment | Passed |
+| edit_cockney.html | Edit word and meaning on form but change mind so click cancel button | removes edits made and reverts back to original entry | Passed |
+| user_profile.html | Click delete button | Delete confirmation modal shows | Passed |
+| user_profile.html | Click back button in modal | Return to profile page with accordian of dictionary entries for user | Passed |
+| user_profile.html | Click delete button in modal | Deletes dictionary entry, flash message 'Task Deleted' shows & return to Add to Dictionary form | Passed |
+
+
+#### Bug Testing
+
+| Bugs Found | Action to fix | Link to fix commit| 
+| -----------|:-------------:| -----------------:| 
+| contact page not working | 
 
