@@ -18,7 +18,7 @@ The final report for the home page can be viewed below and [here](static/testing
 
 <img src="static/testing/testing_lighthouse_pgtw.png" width="500"> 
 
-#### HTML, CSS and JS Tests
+#### HTML, CSS Tests
 
 ### W3C Validator Testing
 I used the W3C validators for HTML and CSS to check my code. 

@@ -25,17 +25,17 @@
             
             <div class="instruction-heading">
                 <h3>Register your account</h3>
-                <p>Sign up today to make a contribution to the Pop Goes The Weasel community</p>
+                <p><a href="{{ url_for( 'register' )}}">Register </a>today to make a contribution to the Pop Goes The Weasel community</p>
             </div>
             
             <div class="instruction-heading">
                 <h3 class="center-align">Sign in</h3>
-                <p>Once you are signed in head to Add Cockney Phrases</p>
+                <p>Next <a href="{{ url_for( 'sign_in' )}}">Sign In </a> and start contributing to the cockney dictionary</p>
             </div>
             
             <div class="instruction-heading">
                 <h3>Add your own Cockney phrase</h3>
-                <p>Type in your word and meaning and let us all in on the secret world of cockney slang!</p>
+                <p><a href="{{ url_for( 'add_cockney' )}}">Add some Cockney</a> words or phrases and let us all in on the secret world of cockney slang!</p>
             </div>
             <br>
     </section>
