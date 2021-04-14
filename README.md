@@ -10,7 +10,8 @@ A link to the website can be found [here](https://pop-weasel.herokuapp.com/)
 ### UX
 
 #### Strategy
-Pop Goes The Weasel is a fun and informative online dictionary for people of all ages. It is for users who may want to understand more about the language of cockney rhyming slang and/or contribute to the vernacular of terms. It is an interactive application where users can register then subsequently login to their account in order to add any further cockney words and phrases. The application is aimed at a wide range of users (10 - 100!) and because of that I am keeping the overall look contempory, yet professional. The users will want to access information regarding cockney words and phrases as well as contribute to the dictionary easily. 
+
+Pop Goes The Weasel is a fun and informative online dictionary for people of all ages. It is for users who may want to understand more about the language of cockney rhyming slang and/or contribute to the vernacular of terms. It is an interactive application where users can register an account, then subsequently login to add any cockney words and phrases. The application is aimed at a wide range of users (10 - 100!) and because of that I am keeping the overall look contemporary, yet professional. The users will want to access information regarding cockney words and phrases as well as contribute to the dictionary easily. 
 
 As a first time user I want to:
 
@@ -42,6 +43,7 @@ As a site owner I want to:
 * allow users to read the dictionary
 
 #### Scope
+
 After analysis of the user stories, I have decided on the below features to be my initial minimum scope:
 
 * Register account form
@@ -52,6 +54,8 @@ After analysis of the user stories, I have decided on the below features to be m
 * Delete words from dictionary
 * Responsive design
 * Contact form 
+
+In future, I would like to lay out the dictionary on the dictionary.html page in a more visually pleasing way.
 
 #### Structure
 
@@ -87,7 +91,7 @@ I set up the database using the following steps from CI tutorials:
 
 ##### Database schema 
 
-My db consists of two collections: 
+My db consists of two collections, one to hold the dictionary items and one for the users: 
 
 1. cockney_dictionary
 
@@ -110,9 +114,6 @@ My db consists of two collections:
             username: "andrew"
             
             password: "pbkdf2:sha256:150000$MaQNn5Lf$6bba13503c555e28773bcf1f25ac5d568c5080d3..."
-
-
-
 
 
 #### Skeleton
@@ -301,7 +302,6 @@ The steps are show in the CI tutorial 'Putting the Basics In Place' which I foll
 * Add in your Key:Value pairs from your project code
 * Check that your Procfile and requirements.txt have been pushed to your github repo as Heroku requires these
 * Now click on 'Deploy Branch' so that Heroku can build and deploy your app
-
 
 ### Credits
 

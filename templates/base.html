@@ -14,7 +14,9 @@
 </head>
 <body>
     <header>
+
         <!-- navbar -->
+
         <nav>
             <div class="nav-wrapper">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-ellipsis-h"></i></a>
@@ -34,7 +36,9 @@
                 </ul>
             </div>
         </nav>
+
         <!-- mobile navbar -->
+
          <ul class="sidenav" id="mobile-demo">
                     <li><a href="{{ url_for( 'home' ) }}">Home</a></li>
                     <li><a href="{{ url_for( 'get_dictionary' ) }}">Dictionary</a></li>
@@ -51,7 +55,9 @@
     </header>
 
         <div> 
+
             <!-- python flash messages-->
+
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
                     {% for message in messages %}
@@ -64,6 +70,7 @@
         </div>
 
         <!-- main content -->
+        
         <main>
         
         {% block content %}
@@ -72,6 +79,7 @@
         </main>
 
         <!-- footer -->
+        
         <footer class="page-footer">
           <div class="container">
             <div class="row">

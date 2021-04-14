@@ -13,24 +13,18 @@ I used the Lighthouse tool to check over my website. I went through each page se
 | profile.html | Make sure H1-6 are in sequential order | Made sure no gaps in order of headings |Yes |
 | add_cockney.html | Make sure H1-6 are in sequential order | Made sure no gaps in order of headings | Yes |
 
-
 The final report for the home page can be viewed below and [here](static/testing/testing_lighthouse_pgtw.png)
 
 <img src="static/testing/testing_lighthouse_pgtw.png" width="500"> 
 
-#### HTML, CSS Tests
+#### W3C Validator HTML & CSS Testing
 
-### W3C Validator Testing
 I used the W3C validators for HTML and CSS to check my code. 
 All pages passed the checks after some adjustments to code. The main issue was in my semantic mark up of the pages. I had used main more than once and some sections did not have headings. This was rectified and here is an example below:
 
 <img src="static/testing/testing_w3c_html_valid_pgtw.png" width="500"> 
 
 <img src="static/testing/testing_w3c_css_valid_pgtw.png" width="500"> 
-
-
-### BeautifyTools for JS????
-http://beautifytools.com/javascript-validator.php On the final test there were no errors found. There were a few errors throughout my work on the project that I corrected as I developed.
 
 #### Defensive Programming after initial tests
 
@@ -60,7 +54,6 @@ the add to dictionary page. Otherwise, any user could retype the URL link themse
 | user_profile.html | Click delete button | Delete confirmation modal shows | Passed |
 | user_profile.html | Click back button in modal | Return to profile page with accordian of dictionary entries for user | Passed |
 | user_profile.html | Click delete button in modal | Deletes dictionary entry, flash message 'Task Deleted' shows & return to Add to Dictionary form | Passed |
-
 
 #### Bug Testing
 
