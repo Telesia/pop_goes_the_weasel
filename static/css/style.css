@@ -23,16 +23,14 @@ main {
     flex: 1 0 auto;
   }
       
-
-
 /* ---------- Colours ----------*/
+
 :root {
     --blue: #0E3746;
     --white: #F4F2EC;
     --red: #BE2623;
     --oatmeal: #EAE8DC;
 }
-
 
 /* ---------- Fonts ----------*/
 
@@ -45,8 +43,8 @@ p {
     font-weight: 500;
 }
 
-
 /* ---------- Flashed Messages ----------*/
+
 .flashes h4 {
     line-height: 2;
 }
@@ -66,10 +64,9 @@ nav {
     background-color: var(--blue);
 }
 
-/* NOT WORKED THE TEXT COLOUR*/
+
 .sidenav {
     background-color: var(--oatmeal);
-    color: var(--red);
 }
 
 /* ---------- Base Template - Footer ----------*/ 
@@ -77,6 +74,7 @@ nav {
 .page-footer {
     background-color: var(--blue);
 }
+
 /* ---------- Home ----------*/ 
 
 .title {
@@ -99,7 +97,6 @@ nav {
 .dictionary-title {
     margin: 0px;
     padding: 40px 0px;
-
 }
 
 .heading-underline {
@@ -123,6 +120,7 @@ nav {
     margin-top: 0px;
     margin-bottom: 50px;
 }
+
 /* ---------- Images ----------*/ 
 
 .img-container {
@@ -138,9 +136,8 @@ nav {
 
 .card-image {
     height: 4vh;
-    
-
 }
+
 .hero-img {
     background-image: url('../images/london_red_phonebox.jpg');
     animation-name: hero-zoom;
@@ -167,7 +164,6 @@ nav {
   }
 }
 
-
 /* ---------- Buttons ----------*/ 
 
 /* Credit for button hover css to: https://stackoverflow.com/questions/35021866/cant-change-highlight-hover-color-in-a-nav-bar-using-materialize-css*/
@@ -191,13 +187,12 @@ nav {
 
 }
 
-
 /* ---------- Contact Form ----------*/ 
 
 .contact-form {
     margin: 0 auto;
     padding: 60px;
-    background: var(--white);
+    background: white;
 }
 
 .contact-subtitle {
