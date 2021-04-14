@@ -7,6 +7,8 @@ Pop Goes The Weasel is a dictionary style website for users who want to learn mo
 
 A link to the website can be found [here](https://pop-weasel.herokuapp.com/)
 
+<img src="static/images/responsive_design_pgtw.png" width="500"> 
+
 ### UX
 
 #### Strategy
