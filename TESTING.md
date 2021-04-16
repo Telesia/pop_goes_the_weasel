@@ -1,13 +1,18 @@
 ### User Stories
 
+Please note: some of the user stories are duplicated in my README.md between first time and registered users so I have presented the test screenshot once in either test case.
+
 First Time User:
 1. be able to read cockney words and rhyming slang phrases
+
 <img src="static/testing/FTU_1.png" width="500"> 
 
 2. be able to register for an account
+
 <img src="static/testing/FTU_2.png" width="500"> 
 
 3. enjoy the experience of entering a website that is informative and understand the main aims of the site
+
 <img src="static/testing/FTU_3.png" width="500"> 
 
 4. be able to instinctively navigate the website to find the information required efficiently.
@@ -15,6 +20,34 @@ First Time User:
 
 5.  be able to contact the website for any further information about cockney rhyming slang or incase my account isn't working
 <img src="static/testing/FTU_5.png" width="500"> 
+
+Registered User:
+
+1. be able to sign in and sign out of my account
+
+a. Sign in Page
+
+<img src="static/testing/RU_1a.png" width="500"> 
+
+b. Welcome User Page
+
+<img src="static/testing/RU_1b.png" width="500"> 
+
+c. User Profile & Sign out tab in navbar available
+
+<img src="static/testing/RU_1c.png" width="500"> 
+
+2. be able to add a word or phrase to the dictionary
+
+<img src="static/testing/RU_2.png" width="500"> 
+
+3. be able to edit a word or phrases in the dictionary that I have added
+
+<img src="static/testing/RU_3.png" width="500"> 
+
+4. be able to delete a word or phrase in the dictionary that I have added
+
+<img src="static/testing/RU_4.png" width="500"> 
 
 
 
