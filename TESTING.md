@@ -1,3 +1,23 @@
+### User Stories
+
+First Time User:
+1. be able to read cockney words and rhyming slang phrases
+<img src="static/testing/FTU_1.png" width="500"> 
+
+2. be able to register for an account
+<img src="static/testing/FTU_2.png" width="500"> 
+
+3. enjoy the experience of entering a website that is informative and understand the main aims of the site
+<img src="static/testing/FTU_3.png" width="500"> 
+
+4. be able to instinctively navigate the website to find the information required efficiently.
+<img src="static/testing/FTU_4.png" width="500"> 
+
+5.  be able to contact the website for any further information about cockney rhyming slang or incase my account isn't working
+<img src="static/testing/FTU_5.png" width="500"> 
+
+
+
 ### Google Developer Tools
 
 I used Google Chrome Developer Tools throughout the project. It was an invaluable resource to check how HTML and CSS changes would look. It was a particularly useful tool to have when checking for responsiveness on difference sized devices. 

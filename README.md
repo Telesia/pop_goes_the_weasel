@@ -19,9 +19,6 @@ As a first time user I want to:
 
 * be able to read cockney words and rhyming slang phrases 
 * be able to register for an account
-* be able to add a word or phrase to the dictionary
-* be able to edit a word or phrases in the dictionary that I have added
-* be able to delete a word or phrase in the dictionary that I have added
 * be able to instinctively navigate the website to find the information required efficiently.
 * enjoy the experience of entering a website that is informative and understand the main aims of the site
 * be able to contact the website for any further information about cockney rhyming slang or incase my account is malfunctioning.
