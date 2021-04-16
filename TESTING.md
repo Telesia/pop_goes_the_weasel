@@ -50,7 +50,6 @@ c. User Profile & Sign out tab in navbar available
 <img src="static/testing/RU_4.png" width="500"> 
 
 
-
 ### Google Developer Tools
 
 I used Google Chrome Developer Tools throughout the project. It was an invaluable resource to check how HTML and CSS changes would look. It was a particularly useful tool to have when checking for responsiveness on difference sized devices. 
@@ -79,6 +78,12 @@ All pages passed the checks after some adjustments to code. The main issue was i
 <img src="static/testing/testing_w3c_html_valid_pgtw.png" width="500"> 
 
 <img src="static/testing/testing_w3c_css_valid_pgtw.png" width="500"> 
+
+### Custom 404 page
+
+To test the 404 page worked and the link back to the home page, I opened the site from the heroku deployment platform and added some nonsense text to the URL and it redirected me to the custom built 404 page.
+
+<img src="static/testing/PGTW_404.png" width="500"> 
 
 ### Defensive Programming after initial tests
 
